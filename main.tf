@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "${var.region}"
-}
-
 resource "aws_s3_bucket" "remote_state" {
   bucket = "${var.prefix}-remote-state-${var.environment}"
   acl    = "authenticated-read"
