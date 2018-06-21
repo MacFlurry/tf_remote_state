@@ -4,7 +4,7 @@ variable "region" {
 }
 
 variable "prefix" {
-  default     = "examplecom"
+  default     = "invisiblecom"
   description = "The name of our org, i.e. examplecom."
 }
 
