@@ -1,6 +1,7 @@
 resource "aws_s3_bucket" "remote_state" {
-  bucket = "${var.prefix}-remote-state-${var.environment}"
-  acl    = "authenticated-read"
+  bucket        = "${var.prefix}-remote-state-${var.environment}"
+  acl           = "authenticated-read"
+  force_destroy = true
 
   versioning {
     enabled = true
